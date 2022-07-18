@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins&display=swap');
+
+/* Common Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: 0.5s all ease-in-out;
+    scroll-behavior: smooth;
+}
+/*-----------------
+Header Area Style
+------------------*/
+header{
+    background-color: #fff5e9;
+}
+.nav-area{
+    display: flex;
+    justify-content: space-between;
+    padding:0 10%;
+    align-items: center;
+}
+.nav-brand img{
+    height: 40px;
+    width: 40px;
+}
+.nav-brand h3{
+    font-family: 'Kaushan Script', cursive;
+    color:#FFA300;
+    margin-left:10px;
+}
+/*Displaying flex for both nav-brand and nav-link*/
+.nav-brand, .nav-link{
+    display: flex;
+    align-items: center;
+}
+.nav-link li{
+    list-style: none;
+    margin-left:30px
+}
+.nav-link a{
+    text-decoration: none;
+    color:#3A3A3A;
+    font-size: 16px;
+    font-weight: 600;
+}
