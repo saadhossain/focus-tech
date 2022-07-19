@@ -88,6 +88,7 @@ Banner Area Style
     border:none;
     border-radius: 40px;
     color:#fff;
+    cursor: pointer;
 }
 .banner-img{
     width: 40%;
@@ -150,3 +151,39 @@ Products Area Style
     color: #5E6366;
     margin-left:10px;
 }
+
+.container>p{
+    text-align: right;
+}
+.container>p>a{
+    text-decoration: none;
+    color: #ed9700;
+    font-weight: 700;
+}
+
+/*-----------------
+Feature Area Style
+------------------*/
+.feature{
+    display: flex;
+    align-items: center;
+}
+
+.feature-info{
+    padding-left:60px;
+}
+.feature-info h2{
+    font-size: 40px;
+    font-weight: 700;
+}
+.join-btn{
+    background-color: #ed9700;
+    padding:10px 25px;
+    border:none;
+    color:#fff;
+    cursor: pointer;
+}
+
+/*-----------------
+Footer Area Style
+------------------*/
