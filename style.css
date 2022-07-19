@@ -280,6 +280,9 @@ Media Queries
     /*------------------
     Common Styling
     ------------------*/
+    body{
+        overflow-x: hidden;
+    }
     .container {
         width: 100%;
     }
@@ -302,10 +305,11 @@ Banner Area Style
 
     .banner-info {
         width: 100%;
+        padding-right: 0px;
     }
 
     .banner-info h1 {
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .banner-img .camera-img {
@@ -315,9 +319,9 @@ Banner Area Style
     }
 
     .banner-img .circle-shape {
-        left: 100px;
-        top: 80px;
-        width: 60%;
+        left: 20px;
+        top: 100px;
+        width: 90%;
     }
 
     /*-----------------
@@ -331,27 +335,21 @@ Banner Area Style
     Products Area Style
     ------------------*/
     .products {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         grid-gap: 10px;
     }
 
     .product {
         margin: 10px;
     }
-
     .product h3 {
         font-size: 24px;
     }
-
     .product h4 {
         font-size: 20px;
     }
-
-    .product img {
-        width: 100%;
-    }
     .container>p {
-        text-align: center;
+        margin-right: 10px;
     }
     /*-----------------
 Feature Area Style
@@ -361,12 +359,15 @@ Feature Area Style
     }
 
     .feature-info {
-        padding:0px 20px;
+        padding-left: 10px;
         padding-bottom: 60px;
     }
 
     .feature-info h2 {
         line-height: 1em;
+    }
+    .feature-img img{
+        width: 100%;
     }
 
 }
