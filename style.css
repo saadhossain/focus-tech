@@ -8,56 +8,74 @@ body {
     transition: 0.5s all ease-in-out;
     scroll-behavior: smooth;
 }
+
 /*-----------------
 Common Styles
 ------------------*/
-main{
+main {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.container{
+
+.container {
     width: 1120px;
-    margin-bottom:30px;
+    margin-bottom: 30px;
 }
-.section-title{
-    color:#ed9700;
+
+.section-title {
+    color: #ed9700;
     text-align: center;
 }
 
 /*-----------------
 Header Area Style
 ------------------*/
-header{
+header {
     background-color: #fff5e9;
 }
-.nav-area{
+
+.nav-area {
     display: flex;
     justify-content: space-between;
-    padding:0 10%;
+    padding: 0 10%;
     align-items: center;
 }
-.nav-brand img{
+
+/* Navbar for mobile only shown on mobile device */
+.nav-mobile {
+    display: none;
+    justify-content: space-between;
+    padding: 0 10%;
+    align-items: center;
+}
+
+.nav-brand img {
     height: 40px;
     width: 40px;
 }
-.nav-brand h3{
+
+.nav-brand h3 {
     font-family: 'Kaushan Script', cursive;
-    color:#FFA300;
-    margin-left:10px;
+    color: #FFA300;
+    margin-left: 10px;
 }
+
 /*Displaying flex for both nav-brand and nav-link*/
-.nav-brand, .nav-link{
+.nav-brand,
+.nav-link {
     display: flex;
     align-items: center;
 }
-.nav-link li{
+
+.nav-link li {
     list-style: none;
-    margin-left:30px
+    margin-left: 30px
 }
-.nav-link a{
+
+.nav-link a {
     text-decoration: none;
-    color:#3A3A3A;
+    color: #3A3A3A;
     font-size: 16px;
     font-weight: 600;
 }
@@ -65,102 +83,120 @@ header{
 /*-----------------
 Banner Area Style
 ------------------*/
-.banner{
+.banner {
     display: flex;
     justify-content: space-between;
     padding: 2% 10%;
     /* align-items: center; */
 }
-.banner-info{
+
+.banner-info {
     width: 60%;
     padding-right: 10%;
 }
-.banner-info h1{
+
+.banner-info h1 {
     font-size: 50px;
     font-weight: 700;
 }
-.banner-info h1 span{
-    color:#ed9700;
+
+.banner-info h1 span {
+    color: #ed9700;
 }
-.book-btn{
+
+.book-btn {
     background-color: #ed9700;
-    padding:10px 25px;
-    border:none;
+    padding: 10px 25px;
+    border: none;
     border-radius: 40px;
-    color:#fff;
+    color: #fff;
     font-weight: 700;
     cursor: pointer;
     transition: background-color 0.4s ease-in-out;
 }
-.book-btn:hover{
+
+.book-btn:hover {
     background-color: #E02C6D;
 }
-.banner-img{
+
+.banner-img {
     width: 40%;
 }
-.banner-img .camera-img{
+
+.banner-img .camera-img {
     position: relative;
     z-index: 20;
 }
-.banner-img .circle-shape{
+
+.banner-img .circle-shape {
     position: absolute;
-    top:85px;
+    top: 85px;
     z-index: 1;
 }
+
 /*-----------------
 Brands Area Style
 ------------------*/
-.brands{
+.brands {
     display: flex;
     justify-content: space-between;
-    margin:30px;
+    margin: 30px;
     border-top: 1px solid #DAE1E9;
     border-bottom: 1px solid #DAE1E9;
 }
-.brands img{
-    margin:20px 10px;
+
+.brands img {
+    margin: 20px 10px;
 }
+
 /*-----------------
 Products Area Style
 ------------------*/
-.products{
+.products {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
 }
-.product{
+
+.product {
     display: flex;
     flex-direction: column;
-    padding:15px;
+    padding: 15px;
     box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
 }
-.product h3{
+
+.product h3 {
     font-size: 28px;
     font-weight: 500px;
-    margin:0px;
-    margin-top:15px;
-}
-.product h4{
-    font-size: 24px;
-    font-weight: 500px;
-    margin:0px;
-}
-.product-ratins .fa-solid{
-    color: #FB8200;
-}
-.product-ratins .fa-solid:last-child{
-    color: #5E6366;
-}
-.rating-value{
-    color: #5E6366;
-    margin-left:10px;
+    margin: 0px;
+    margin-top: 15px;
 }
 
-.container>p{
+.product h4 {
+    font-size: 24px;
+    font-weight: 500px;
+    margin: 0px;
+}
+
+.product-ratins .fa-solid {
+    color: #FB8200;
+}
+
+.product-ratins .fa-solid:last-child {
+    color: #5E6366;
+}
+
+.rating-value {
+    color: #5E6366;
+    margin-left: 10px;
+}
+
+.container>p {
     text-align: right;
 }
-.container>p>a{
+
+.container>p>a {
     text-decoration: none;
     color: #ed9700;
     font-weight: 700;
@@ -169,60 +205,168 @@ Products Area Style
 /*-----------------
 Feature Area Style
 ------------------*/
-.feature{
+.feature {
     display: flex;
     align-items: center;
 }
 
-.feature-info{
-    padding-left:60px;
+.feature-info {
+    padding-left: 60px;
 }
-.feature-info h2{
+
+.feature-info h2 {
     font-size: 40px;
     font-weight: 700;
 }
-.join-btn{
+
+.join-btn {
     background-color: #ed9700;
-    padding:10px 25px;
-    border:none;
-    color:#fff;
+    padding: 10px 25px;
+    border: none;
+    color: #fff;
     font-weight: 700;
     cursor: pointer;
     transition: background-color 0.4s ease-in-out;
 }
-.join-btn:hover{
+
+.join-btn:hover {
     background-color: #E02C6D;
 }
+
 /*-----------------
 Footer Area Style
 ------------------*/
-footer{
+footer {
     background-color: #0A0826;
     width: 100%;
 }
-.footer-info{
+
+.footer-info {
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    color:#fff;
-    padding:10px 0px;
+    color: #fff;
+    padding: 10px 0px;
 }
-.footer-brand{
+
+.footer-brand {
     display: flex;
     align-items: center;
 }
-.footer-brand img{
+
+.footer-brand img {
     height: 40px;
     width: 40px;
 }
-.footer-brand h3{
+
+.footer-brand h3 {
     font-family: 'Kaushan Script', cursive;
-    color:#FFA300;
-    margin-left:10px;
+    color: #FFA300;
+    margin-left: 10px;
 }
-.icons .fa-brands{
+
+.icons .fa-brands {
     font-size: 20px;
-    margin-left:20px;
-    color:#fff;
+    margin-left: 20px;
+    color: #fff;
+}
+
+/*-----------------
+Media Queries
+------------------*/
+@media screen and (max-width:576px) {
+
+    /*------------------
+    Common Styling
+    ------------------*/
+    .container {
+        width: 100%;
+    }
+
+    .nav-area {
+        display: none;
+    }
+
+    .nav-mobile {
+        display: flex;
+    }
+
+    /*-----------------
+Banner Area Style
+------------------*/
+    .banner {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .banner-info {
+        width: 100%;
+    }
+
+    .banner-info h1 {
+        font-size: 40px;
+    }
+
+    .banner-img .camera-img {
+        width: 350px;
+        position: relative;
+        left: -90px;
+    }
+
+    .banner-img .circle-shape {
+        left: 100px;
+        top: 80px;
+        width: 60%;
+    }
+
+    /*-----------------
+    Brands Area Style
+    ------------------*/
+    .brands {
+        flex-wrap: wrap;
+    }
+
+    /*-----------------
+    Products Area Style
+    ------------------*/
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+
+    .product {
+        margin: 10px;
+    }
+
+    .product h3 {
+        font-size: 24px;
+    }
+
+    .product h4 {
+        font-size: 20px;
+    }
+
+    .product img {
+        width: 100%;
+    }
+    .container>p {
+        text-align: center;
+    }
+    /*-----------------
+Feature Area Style
+------------------*/
+    .feature {
+        flex-direction: column-reverse;
+    }
+
+    .feature-info {
+        padding:0px 20px;
+        padding-bottom: 60px;
+    }
+
+    .feature-info h2 {
+        line-height: 1em;
+    }
+
 }
