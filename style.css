@@ -84,7 +84,11 @@ Banner Area Style
 .banner {
     display: flex;
     justify-content: space-between;
-    padding: 2% 10%;
+    padding: 2% 0%;
+    padding-left:10%;
+    background-image: url(images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    background-position: right;
     /* align-items: center; */
 }
 
@@ -300,6 +304,7 @@ Banner Area Style
     .banner {
         flex-direction: column-reverse;
         align-items: center;
+        background-position: center top;
     }
 
     .banner-info {
@@ -314,13 +319,7 @@ Banner Area Style
     .banner-img .camera-img {
         width: 350px;
         position: relative;
-        left: -90px;
-    }
-
-    .banner-img .circle-shape {
-        left: 20px;
-        top: 100px;
-        width: 90%;
+        left: -120px;
     }
 
     /*-----------------
