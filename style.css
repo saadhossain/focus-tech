@@ -88,7 +88,12 @@ Banner Area Style
     border:none;
     border-radius: 40px;
     color:#fff;
+    font-weight: 700;
     cursor: pointer;
+    transition: background-color 0.4s ease-in-out;
+}
+.book-btn:hover{
+    background-color: #E02C6D;
 }
 .banner-img{
     width: 40%;
@@ -181,9 +186,43 @@ Feature Area Style
     padding:10px 25px;
     border:none;
     color:#fff;
+    font-weight: 700;
     cursor: pointer;
+    transition: background-color 0.4s ease-in-out;
 }
-
+.join-btn:hover{
+    background-color: #E02C6D;
+}
 /*-----------------
 Footer Area Style
 ------------------*/
+footer{
+    background-color: #0A0826;
+    width: 100%;
+}
+.footer-info{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:#fff;
+    padding:10px 0px;
+}
+.footer-brand{
+    display: flex;
+    align-items: center;
+}
+.footer-brand img{
+    height: 40px;
+    width: 40px;
+}
+.footer-brand h3{
+    font-family: 'Kaushan Script', cursive;
+    color:#FFA300;
+    margin-left:10px;
+}
+.icons .fa-brands{
+    font-size: 20px;
+    margin-left:20px;
+    color:#fff;
+}
