@@ -5,8 +5,6 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    transition: 0.5s all ease-in-out;
-    scroll-behavior: smooth;
 }
 
 /*-----------------
@@ -283,6 +281,7 @@ Media Queries
     body{
         overflow-x: hidden;
     }
+
     .container {
         width: 100%;
     }
@@ -368,6 +367,7 @@ Feature Area Style
     }
     .feature-img img{
         width: 100%;
+        overflow: hidden;
     }
 
 }
